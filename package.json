@@ -1,0 +1,14 @@
+{
+  "name": "exia",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "inquirer": "^7.0.1",
+    "yargs": "^15.0.2"
+  }
+}

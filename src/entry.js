@@ -1,6 +1,11 @@
 const yargs = require('yargs');
 
-const { chooseOperation, connectToDb, viewSecret } = require('./subcommands');
+const {
+  chooseOperation,
+  connectToDb,
+  viewSecret,
+  viewLogo,
+} = require('./subcommands');
 
 yargs
   .command('$0', 'A handy tool for database and secret management', {}, () => {
@@ -11,5 +16,8 @@ yargs
   })
   .command('secret [name]', 'View a secret', {}, ({ name }) => {
     viewSecret(name);
+  })
+  .command('logo', 'View a secret', {}, () => {
+    viewLogo();
   })
   .help().argv;
